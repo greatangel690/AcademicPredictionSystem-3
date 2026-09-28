@@ -20,7 +20,7 @@ db.connect(err => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Server Running');
+    res.send(path.join(__dirname, "public", "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
