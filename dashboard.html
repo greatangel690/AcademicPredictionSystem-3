@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>Academic Performance Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card blue">
+            <h2>Total Students</h2>
+            <p id="totalStudents">0</p>
+        </div>
+     <div class="card green">
+            <h2>Excellent Students</h2>
+            <p id="excellentStudents">0</p>
+        </div>
+
+        <div class="card orange">
+            <h2>At Risk Students</h2>
+            <p id="riskStudents">0</p>
+        </div>
+
+    </div>
+
+    <div class="student-form">
+
+        <h2>Add Student Record</h2>
+
+        <input type="text" id="name" placeholder="Student Name">
+
+        <input type="number" id="attendance" placeholder="attendance Score \(0-10\)">
+
+        <input type="number" id="test" placeholder="Test Score \(0-20\)">
+
+        <input type="number" id="exam" placeholder="Exam Score \(0-70\)">
+
+        <button onclick="saveStudent()">
+            Save Record
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Attendance</th>
+                <th>Test</th>
+                <th>exam</th>
+                <th>total</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
