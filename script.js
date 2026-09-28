@@ -11,9 +11,7 @@ function signup(){
 
 function login(){
 
-    alert("Login Successful");
-
-    window.location.href = "dashboard.html";
+   window.location.href = "dashboard.html";
 }
 
 function saveStudent(){
@@ -29,7 +27,7 @@ function saveStudent(){
      if(assignment > 70 || test > 20 || attendance > 10){
 
         alert("Assignment must not be more than 10, Test must not be more than 20, and Exam must not be more than 70");
-
+localstorage.setItem("saveStudent", JSON.stringify(saveStudent));
         return;
     }
 
