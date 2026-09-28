@@ -74,6 +74,6 @@ function saveStudent(){
         <td>${assignment}</td>
         <td>${average}</td>
         <td>${status}</td>
-let row = localstorage.setItem("row", JSON.stringify(row));
+
     `;
 }
